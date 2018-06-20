@@ -1,3 +1,4 @@
 .vscode
-python
+python/.vscode
+python/venv-dir
 node_modules
