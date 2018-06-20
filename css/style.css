@@ -1,0 +1,145 @@
+@import 'materialize.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+body {
+    background-color: #E0E1E0;
+}
+
+nav {
+    background-color: #FFF !important;
+    /* color: #3c3c3c !important; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input-field {
+    z-index: 999;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-field input {
+    text-align: center !important;
+    font-size: 30px !important;
+    color: #3c3c3c !important;
+}
+
+.stripe {
+    /* height: auto; */
+    padding-top: 20px;
+    padding-bottom: 2px;
+    text-align: left;
+    background-color: #F5F4F6;
+    color: #3c3c3c;
+}
+
+.stripe .input-field {
+    margin: auto;
+    padding: 5px;
+    height: 45px;
+    background-color: #fb8a00;
+    /* opacity: 0.12; */
+    border-radius: 4px;
+    color: #9b7552;
+    box-shadow: none;
+}
+
+/* .stripe .input-field .active {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+} */
+
+.stripe .input-field input {
+    margin-left: 40px;
+    height: 35px;
+    background-color: #ffbb45;
+    color: #c15c00 !important;
+    border-radius: 4px;
+    font-size: 14px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.stripe h6 {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.stripe .input-field i {
+    /* top: -8px; */
+    font-size: 14px !important;
+    line-height: 35px;
+    text-align: center;
+}
+
+.stripe .input-field i.active {
+    color: #3c3c3c !important;
+}
+
+/* text Field */
+
+.input-field input[type=number] {
+    display: block;
+    color: #c15c00 !important;
+    line-height: inherit;
+    -webkit-transition: .3s background-color;
+    transition: .3s background-color;
+}
+
+.input-field input[type=number]::-webkit-input-placeholder {
+    color: #c15c00 !important;
+}
+
+.nav-wrapper .input-field input[type=number] {
+    height: inherit;
+    padding-left: 4rem;
+    width: calc(100% - 4rem);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-field input[type=number]:focus:not(.browser-default) {
+    background-color: #fff;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3c3c3c !important;
+}
+
+.input-field input[type=number]:focus:not(.browser-default)+label i,
+.input-field input[type=number]:focus:not(.browser-default)~.mdi-navigation-close,
+.input-field input[type=number]:focus:not(.browser-default)~.material-icons {
+    color: #3c3c3c !important;
+}
+
+.input-field input[type=number]+.label-icon {
+    -webkit-transform: none;
+    transform: none;
+    left: 1rem;
+}
+
+.input-field input[type=number]~.mdi-navigation-close,
+.input-field input[type=number]~.material-icons {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    -webkit-transition: .3s color;
+    transition: .3s color;
+}
+
+/*BTn*/
+.btn,
+.btn-large,
+.btn-small {
+    background-color: #fb8a00 !important;
+}
