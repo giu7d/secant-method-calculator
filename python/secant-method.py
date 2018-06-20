@@ -48,7 +48,7 @@ try:
 
   for i in range(len(values)):
     y_values.append(f(values[i]))
-    ids.append("x" + str(i+1))
+    ids.append("x" + str(i+2))
 
   data['result'].append({
     'ids' : ids,

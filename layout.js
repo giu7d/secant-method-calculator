@@ -37,7 +37,7 @@ const allResult = () => {
     let layout = "";
     layout += '<span class="card-title"><i class="material-icons" style="margin-right: 14px;">done</i>Todos os resultados</span>';
     layout += '<table class="striped"><thead><tr>';
-    layout += '<th>k</th>';
+    layout += '<th></th>';
     layout += '<th></th>';
     layout += '<th>x</th>';
     layout += '<th>f(x)</th>';
@@ -52,8 +52,7 @@ const allResult = () => {
 
 const result = (i, title, x, y) => {
     let layout = "";
-    layout += '<tr><td>' + i + '</td>';
-    layout += '<td>' + title + '</td>';
+    layout += '<tr><td>' + title + '</td><td></td>';
     layout += '<td>' + x + '</td>';
     layout += '<td>' + y + '</td></tr>';
 

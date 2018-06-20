@@ -19,6 +19,6 @@ app.on('ready', () => {
         slashes: true
     }));
 
-    mainWindow.setMenu(null);
+    // mainWindow.setMenu(null);
 
 }); 

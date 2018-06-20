@@ -2,9 +2,9 @@ const PythonShell = require('python-shell');
 const lay = require('./layout');
 
 let expr;
-let x0;
-let x1;
-let err;
+let x0 = parseFloat($("#x0").val());;
+let x1 = parseFloat($("#x1").val());;
+let err = parseFloat($("#err").val());
 
 // expr = "x**3+log(x)-5";
 // x0 = 0.5;
@@ -14,10 +14,10 @@ let err;
 
 const validateInputs = (() => {
 
-    if (x0 != '' && x0 != undefined && x0 != NaN &&
-        x1 != '' && x1 != undefined && x1 != NaN &&
-        err != '' && err != undefined && err != NaN &&
-        expr != '' && expr != undefined && expr != NaN) {
+    if (toString(x0) != '' && x0 != undefined && x0 != NaN &&
+        toString(x0) != '' && x1 != undefined && x1 != NaN &&
+        toString(x0) != '' && err != undefined && err != NaN && (parseFloat(err) != 0) &&
+        toString(x0) != '' && expr != undefined && expr != NaN) {
         return true;
     }
     return false;

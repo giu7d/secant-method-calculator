@@ -8,11 +8,11 @@
 
 <body>
     <nav class="nav-extended">
-        <div class="nav-wrapper" style="height: 56px;">
+        <div class="nav-wrapper" style="height: 100px;">
             <div class="input-field">
                 <input id="expr" type="search" placeholder="x**3 + log(x) - 5">
                 <label class="label-icon" for="expr">
-                    <i style="color: #D0D0D0">f(x) =</i>
+                    <i style="color: #D0D0D0; line-height: 100px;">f(x) =</i>
                 </label>
             </div>
         </div>
@@ -24,15 +24,15 @@
                 <div class="col s9 offset-s2">
                     <div class="input-field col s3">
                         <i class="label-icon prefix">x0: </i>
-                        <input id="x0" type="number" placeholder="0.00">
+                        <input id="x0" type="number" value="0.00">
                     </div>
                     <div class="input-field col s3 offset-s1">
                         <i class="label-icon prefix">x1: </i>
-                        <input id="x1" type="number" placeholder="0.00">
+                        <input id="x1" type="number" value="0.00">
                     </div>
                     <div class="input-field col s3 offset-s1">
                         <i class="label-icon prefix">err: </i>
-                        <input id="err" type="number" placeholder="0.00" value="0.0001">
+                        <input id="err" type="number" value="0.0001">
                     </div>
                 </div>
                 <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal calculate">
