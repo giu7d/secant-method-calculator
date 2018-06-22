@@ -11,12 +11,14 @@ data['result'] = []
 data['graph'] = []
 data['request'] = []
 data['err'] = []
-# Lista de Valores Aproximados
-values = []
+
+values = [] # Lista de Valores Aproximados
+
 
 # Interpretador de String
 def exprInterpreter(expr):
   return parser.expr(expr).compile()
+
 
 # Metodo da Secante
 def secant(f, x0, x1, ERR=0.0001):
@@ -27,6 +29,7 @@ def secant(f, x0, x1, ERR=0.0001):
   else:
     return secant(f, x1, x2, ERR)
 
+
 # Chutes Iniciais
 expr = str(sys.argv[1])
 x0 = float(str(sys.argv[2]))
@@ -35,9 +38,11 @@ err = float(str(sys.argv[4]))
 svdPath = "assets/graphs/" + expr + ".svg"
 svdPathZoom = "assets/graphs/" + expr + "(Zoom).svg"
 
+
 # Definição de que a função é do tipo F(x)
 def f(x):
   return(float(eval(exprInterpreter(expr))))
+
 
 # Aplicação do Metodo da Secante
 try:

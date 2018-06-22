@@ -9,7 +9,11 @@
   },
   "author": "Giuseppe A. S. Davanzo",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "python-shell": "^0.5.0"
   }
 }
